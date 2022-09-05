@@ -390,12 +390,14 @@ width:170;
  border: 1px solid var(--icon-color);
  border-radius: 4px;
   display: flex;
+  object-position: contain;
   justify-content: center;
   align-items: center;
 }
 .client-link:hover,
 .client-link:focus{
   background-color: var(--background-color);
+border-color: var(--accent-color);
 }
 .clients-list .client+.client{
   margin-left: 30px;
@@ -403,11 +405,12 @@ width:170;
 .client-icon {
   fill:var(--icon-color);
 }
-.client-link:hover .social-icon,
-.client-link:focus .social-icon{
+.client-link:hover .client-icon,
+.client-link:focus .client-icon{
 fill: var(--accent-color);
-border-color: var(--accent-color);
+
 }
+
 /* Filers-button */
 .filter-button {
   padding: 6px 22px;
@@ -461,6 +464,7 @@ border-color: var(--accent-color);
 .filter-button:focus {
   color: var(--contrast-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card h2 {
   font-weight: 700;
